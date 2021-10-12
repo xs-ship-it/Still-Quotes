@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+.container-fluid{
+    background-image: url("https://wallpaperaccess.com/full/156588.jpg");
+}
+h1{
+    color: honeydew;
+}
+
+p{
+    color:white;
+    font-size: larger;
+    font-family: merienda;
+}

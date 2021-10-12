@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="view">
+    
+    
+        <h3>my Quotes</h3>
+        
+        <div *ngFor='let quote of quotes; let i= index'>
+          <div class="card"> 
+            <h5><strong>author: {{quote.author}}</strong></h5>
+            <br>
+            <p class="quoteinfo">"{{quote.description}}"</p>
+            <div class="detail-button">
+              <a  (click)="showDetails(i)" class="btn btn-sm btn-info">Quote details</a>
+              <br>
+            </div>
+          <app-quote-details *ngIf='quote.showQuoteDetails'[quote]='quote'(isComplete)="completeQuote($event,i)"></app-quote-details>
+          
+          </div>
+          </div>
+          <div class="bottom">
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+          </div>
+        <div *ngIf="quotes.length < 1 ," class="alert alert-danger"> No quotes in archive!
+        
+        </div>
+  </div>  
+</div>

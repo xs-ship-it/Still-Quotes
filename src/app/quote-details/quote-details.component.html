@@ -1,0 +1,10 @@
+<br><P>published by :{{quote.publisher}};{{quote.date|date}}</P>
+<p>This quote was published:{{quote.date|dateCount}} years ago</p>
+<br>
+<div class="col-md-6">
+    <i (click)='likeBtnClick()' class="far fa-grin-alt fa-2x"></i>{{likes}} &nbsp;&nbsp;
+      <i (click)='dislikeBtnClick()' class="fas fa-angry fa-2x"></i> {{dislikes}}
+</div>
+<br>
+<button onclick="alert('do you want do delete quote')" (click)="quoteComplete(true)" class="btn btn-sm btn-danger">Delete Quote</button>
+
