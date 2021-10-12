@@ -9,3 +9,7 @@ h3{
     color: white;
     font-family:merienda ;
 }
+.card{
+    border:2px soli white;
+    border-radius: 2px;
+}
